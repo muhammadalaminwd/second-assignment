@@ -12,6 +12,7 @@ h1{
 }
 h2{
     color: darkslateblue;
+    font-size: 30px;
 }
 .top-section{
     display: flex;
@@ -43,7 +44,13 @@ header-section-styles
     width: 50%;
 
 }
-.journey p{
+span{
+    background-color: darkblue;
+    color: white;
+    padding: 0 5px;
+}
+.journey-para{
+    font-weight: 200;
     font-size: 20px;
 }
 .link{
@@ -126,7 +133,7 @@ popular-collection-styles
 }
 
 /*---....................
-About-section-styles
+About-Me-Section
 ...................--- */
 
 #about .about {
@@ -170,8 +177,6 @@ About-section-styles
 	width: 98%;
 	border: 7px solid crimson;
 }
-/* End About Section */
-
 
 /*---....................
 footer-styles
@@ -185,7 +190,9 @@ footer{
     text-align: center;
     padding: 2px 2px;
 }
-
+.influence{
+    color: white;
+}
 .social-button{
     display: flex;
     color: white;
@@ -200,9 +207,27 @@ footer{
 }
 
 /*---....................
-Media-Query
+Media Queries
 ...................--- */
 
-@media (width:) {
-    
+/* Mobile Devices */
+@media Only screen and (max-width:688px) {
+    .popular-collection{
+        width: 100%;
+    }
+    .products, .product-image, .product-info{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .product, .product-image{
+        flex-direction: column;
+    }
+}
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .popular-collection{
+        width: 100%;
+    }
+    .products, .product-image{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
