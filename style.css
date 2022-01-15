@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 20px;
+}
+/*---....................
+top-section-styles
+...................--- */
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar{
+    display: flex;
+    list-style-type: none;
+}
+.nav-bar li{
+    margin-right: 15px;
+    font-size: 1.3em;
+}
+
+/*---....................
+header-section-styles
+...................--- */
+
+.header-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.journey{
+    font-size: 3em;
+    width: 50%;
+}
+.journey p{
+    font-size: 20px;
+}
+.main-camera{
+    width: 50%;
+}
+.main-camera img{
+    width: 500px;
+    margin-left: 200px;
+}
+
+/*---....................
+brand-logos-styles
+...................--- */
+
+.brand-logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    margin-right: 20px;
+}
