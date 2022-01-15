@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/*---....................
+body-styles
+...................--- */
+
 body{
     font-family: 'Roboto', sans-serif;
     margin: 20px 20px;
     background-color: rgb(237, 241, 243);
 }
+
 /*---....................
 top-section-styles
 ...................--- */
+
 h1{
     color: darkblue;
 }
@@ -30,6 +37,7 @@ h2{
 #icon{
     color: black;
 }
+
 /*---....................
 header-section-styles
 ...................--- */
@@ -42,7 +50,6 @@ header-section-styles
 .journey{
     font-size: 3em;
     width: 50%;
-
 }
 span{
     background-color: darkblue;
@@ -56,7 +63,6 @@ span{
 .link{
     display: flex;
 }
-
 .link a{
     text-decoration: none;
     color: white;
@@ -102,32 +108,32 @@ popular-collection-styles
 ...................--- */
 
 .popular-collection{
-    display: block;
+    display: grid;
+    justify-content: center;
+    width: 100%;
 }
 .products{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
 }
 .product{
     display: grid;
     background-color: white;
     padding: 20px;
-
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px #888888;
 }
 .popular-title{
     text-align: center;
 }
 .product img{
     width: fit-content;
-
 }
-
 #ratings{
     color: rgb(236, 178, 31);
 }
-
 .fas{
     color: white;
 }
@@ -144,12 +150,10 @@ About-Me-Section
 	margin: 0 auto;
 	padding: 100px 20px;
 }
-
 .cta{
     text-decoration: none;
     background-color: crimson;
 }
-
 #about .col-right h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
@@ -166,7 +170,6 @@ About-Me-Section
 	font-size: 2rem;
     border-radius: 50px;
 }
-
 }
 #about .col-left .about-img::after {
 	content: '';
@@ -211,6 +214,7 @@ Media Queries
 ...................--- */
 
 /* Mobile Devices */
+
 @media Only screen and (max-width:688px) {
     .popular-collection{
         width: 100%;
@@ -221,13 +225,21 @@ Media Queries
     .product, .product-image{
         flex-direction: column;
     }
+    .header-section{
+        display: block;
+    }
+.about img{
+    width: 250px;
 }
+}
+
 /* tablet devices */
 @media only screen and (min-width: 688px) and (max-width: 992px) {
     .popular-collection{
         width: 100%;
     }
     .products, .product-image{
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
