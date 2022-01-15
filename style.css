@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 20px 20px;
+    background-color: rgb(237, 241, 243);
 }
 /*---....................
 top-section-styles
 ...................--- */
-
+h1{
+    color: darkblue;
+}
+h2{
+    color: darkslateblue;
+}
 .top-section{
     display: flex;
     justify-content: space-between;
@@ -20,7 +26,9 @@ top-section-styles
     margin-right: 15px;
     font-size: 1.3em;
 }
-
+#icon{
+    color: black;
+}
 /*---....................
 header-section-styles
 ...................--- */
@@ -33,9 +41,25 @@ header-section-styles
 .journey{
     font-size: 3em;
     width: 50%;
+
 }
 .journey p{
     font-size: 20px;
+}
+.link{
+    display: flex;
+}
+
+.link a{
+    text-decoration: none;
+    color: white;
+    background-color: crimson;
+    padding: 25px;
+    border-radius: 50px;
+}
+.link a:hover{
+    background-color: rgb(167, 20, 50);
+    color: white;
 }
 .main-camera{
     width: 50%;
@@ -43,6 +67,10 @@ header-section-styles
 .main-camera img{
     width: 500px;
     margin-left: 200px;
+}
+.main-camera img:hover{
+    transform: rotate(360deg);
+    transition-duration: 4s;
 }
 
 /*---....................
@@ -53,7 +81,128 @@ brand-logos-styles
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
 }
 .logo{
+    margin-right: 25px;
+    padding: 5px;
+}
+
+/*---....................
+popular-collection-styles
+...................--- */
+
+.popular-collection{
+    display: block;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+.product{
+    display: grid;
+    background-color: white;
+    padding: 20px;
+
+}
+.popular-title{
+    text-align: center;
+}
+.product img{
+    width: fit-content;
+
+}
+
+#ratings{
+    color: rgb(236, 178, 31);
+}
+
+.fas{
+    color: white;
+}
+
+/*---....................
+About-section-styles
+...................--- */
+
+#about .about {
+    justify-content: center;
+    align-items: center;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+
+.cta{
+    text-decoration: none;
+    background-color: crimson;
+}
+
+#about .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 10px;
+}
+#about .col-right p {
+	margin-bottom: 20px;
+}
+#about .col-right .cta {
+	color: white;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+    border-radius: 50px;
+}
+
+}
+#about .col-left .about-img::after {
+	content: '';
+	position: absolute;
+	left: -33px;
+	top: 19px;
+	height: 98%;
+	width: 98%;
+	border: 7px solid crimson;
+}
+/* End About Section */
+
+
+/*---....................
+footer-styles
+...................--- */
+
+footer{
+    background-color: darkblue;
+}
+.copyright{
+    color: white;
+    text-align: center;
+    padding: 2px 2px;
+}
+
+.social-button{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
     margin-right: 20px;
+    font-size: 30px;
+}
+.social a{
+    margin-right: 40px;
+    color: white;
+}
+
+/*---....................
+Media-Query
+...................--- */
+
+@media (width:) {
+    
 }
